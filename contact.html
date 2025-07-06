@@ -26,25 +26,25 @@
     <form action="https://formspree.io/f/meokwvvr" method="post" class="contact">
         <div class="entries">
             <div class="field">
-                <label for="first-name" class="input-field">First Name</label><br>
+                <label for="first-name" class="input-field">FIRST NAME *</label><br>
                 <input class="input-text" type="text" name="first-name" id="fname" placeholder="Jane" required><br>
             </div>
             <div class="field">
-                <label for="last-name" class="input-field">Last Name</label><br>
+                <label for="last-name" class="input-field">LAST NAME *</label><br>
                 <input class="input-text" type="text" name="last-name" id="lname" placeholder="Doe" required><br>
             </div> 
             <div class="field">
-                <label for="email" class="input-field">Email</label><br>
+                <label for="email" class="input-field">EMAIL *</label><br>
                 <input class="input-text" type="email" name="email" id="emailad" placeholder="name@email.com" required><br>
             </div>    
             <div class="field">
-                <label for="message" class="input-field">Message</label><br>
-                <input class="input-text" type="text" name="message" id="msg" placeholder="Hi...." required><br>
+                <label for="message" class="input-field">MESSAGE *</label><br>
+                <textarea class="input-text" name="message" id="msg" placeholder="Hi...." required></textarea><br>
+                <!-- Supports multiple lines of input instead of input that just takes in 1 -->
             </div>
         </div>
-        
-        <button type="submit">Submit</button>
+        <input type="hidden" name="_next" value="thanks.html">
+        <button type="submit" class="submit-btn">Submit</button>
     </form>
-    
 </body>
 </html>

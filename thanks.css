@@ -44,59 +44,10 @@ a{
     color: black;
 }
 
-.title{
-    margin: 50px;
-    text-align: center;
+.text{
     font-family: Libertinus Mono;
-    font-size: 60px;
-}
-
-form{
-    margin: 50px 130px;
-}
-
-.entries{
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 60px;
-    row-gap: 30px;
-}
-
-.input-field{
-    font-size: 14px;
-}
-
-.input-text{
-    border-radius: 5px;
-    padding: 10px 20px;
-    margin-top: 10px;
-}
-
-#fname, #lname{
-    width: 550px;
-}
-
-#emailad{
-    width: 1200px;
-}
-
-#msg{
-    width: 1200px;
-    overflow-y: auto;
-    height: 80px;
-    border: solid black 2px;
-}
-
-::placeholder{
-    font-family: 'Courier New', Courier, monospace;
-    font-size: medium;
-}
-
-.submit-btn{
-    margin-top: 20px;
-    padding: 10px 30px;
-    background-color: rgb(255, 230, 234);
-    border-radius: 5px;
+    font-size: 30px;
     text-align: center;
-    font-size: medium;
+    padding: 20px;
+    margin-top: 50px;
 }
