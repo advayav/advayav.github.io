@@ -1,6 +1,7 @@
 body{
     margin: 0;
     font-family: Roboto;
+    overflow-x: hidden;
 }
 
 a{
@@ -9,14 +10,28 @@ a{
 
 .nav-bar{
     background-color: rgb(255, 230, 234);
-    padding: 20px;
+    padding: 16px;
     width: 100%;
     padding-top: 40px;
     padding-bottom: 40px;
-    position: sticky;
-    top: 0;
     display: flex;
     justify-content: space-between;
+}
+
+.nav-left{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-right{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    height: 100px;
+    width: 100px;
 }
 
 .home-button, .project-button, .contact-button{
@@ -45,31 +60,57 @@ a{
 
 .title{
     margin: 50px;
-    align-items: center;
     text-align: center;
     font-family: Libertinus Mono;
     font-size: 60px;
 }
 
-.intro-grid{
-    margin-top: 50px;
-    display: grid;
-    grid-template-areas: "intro-photo intro-para";
+form{
+    margin: 50px 130px;
 }
 
-.intro-para{
-    margin-left: 50px;
-    align-items: center;
-    margin-top: 100px;
-    margin: 80px;
+.entries{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 60px;
+    row-gap: 30px;
 }
 
-.intro-photo{
-    align-items: center;
-    margin-left: 100px;
+.input-field{
+    font-size: 14px;
+}
+
+.input-text{
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 10px;
+}
+
+#fname, #lname{
+    width: 550px;
+}
+
+#emailad{
+    width: 1200px;
+}
+
+#msg{
+    width: 1200px;
+    overflow-y: auto;
+    height: 80px;
     border: solid black 2px;
 }
 
-.ext-info{
-    color: blue;
+::placeholder{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+}
+
+.submit-btn{
+    margin-top: 20px;
+    padding: 10px 30px;
+    background-color: rgb(255, 230, 234);
+    border-radius: 5px;
+    text-align: center;
+    font-size: medium;
 }

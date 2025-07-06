@@ -1,7 +1,6 @@
 body{
     margin: 0;
     font-family: Roboto;
-    overflow-x: hidden;
 }
 
 a{
@@ -10,14 +9,28 @@ a{
 
 .nav-bar{
     background-color: rgb(255, 230, 234);
-    padding: 20px;
+    padding: 16px;
     width: 100%;
     padding-top: 40px;
     padding-bottom: 40px;
-    position: sticky;
-    top: 0;
     display: flex;
     justify-content: space-between;
+}
+
+.nav-left{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-right{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    height: 100px;
+    width: 100px;
 }
 
 .home-button, .project-button, .contact-button{
@@ -44,10 +57,34 @@ a{
     color: black;
 }
 
-.text{
-    font-family: Libertinus Mono;
-    font-size: 30px;
+.title{
+    margin: 50px;
+    align-items: center;
     text-align: center;
-    padding: 20px;
+    font-family: Libertinus Mono;
+    font-size: 60px;
+}
+
+.intro-grid{
     margin-top: 50px;
+    display: grid;
+    grid-template-areas: "intro-photo intro-para";
+    margin-bottom: 50px;
+}
+
+.intro-para{
+    margin-left: 50px;
+    align-items: center;
+    margin-top: 100px;
+    margin: 80px;
+}
+
+.intro-photo{
+    align-items: center;
+    margin-left: 100px;
+    border: solid black 2px;
+}
+
+.ext-info{
+    color: blue;
 }

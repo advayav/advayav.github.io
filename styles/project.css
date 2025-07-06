@@ -10,14 +10,28 @@ a{
 
 .nav-bar{
     background-color: rgb(255, 230, 234);
-    padding: 20px;
+    padding: 16px;
     width: 100%;
     padding-top: 40px;
     padding-bottom: 40px;
-    position: sticky;
-    top: 0;
     display: flex;
     justify-content: space-between;
+}
+
+.nav-left{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-right{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    height: 100px;
+    width: 100px;
 }
 
 .home-button, .project-button, .contact-button{
