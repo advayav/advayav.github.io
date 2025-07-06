@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libertinus+Mono&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="nav-bar">
+        <div class="nav-left">
+            <a href="index.html" class="home-button">Home</a>
+            <a href="project.html" class="project-button">Projects</a>
+        </div>
+        <div class="nav-right">
+            <a href="contact.html" class="contact-button">Contact Me</a>
+        </div>
+    </div>
+
+    <h1 class="title">Contact Me</h1>
+
+    <form action="https://formspree.io/f/meokwvvr" method="post" class="contact">
+        <div class="entries">
+            <div class="field">
+                <label for="first-name" class="input-field">First Name</label><br>
+                <input class="input-text" type="text" name="first-name" id="fname" placeholder="Jane" required><br>
+            </div>
+            <div class="field">
+                <label for="last-name" class="input-field">Last Name</label><br>
+                <input class="input-text" type="text" name="last-name" id="lname" placeholder="Doe" required><br>
+            </div> 
+            <div class="field">
+                <label for="email" class="input-field">Email</label><br>
+                <input class="input-text" type="email" name="email" id="emailad" placeholder="name@email.com" required><br>
+            </div>    
+            <div class="field">
+                <label for="message" class="input-field">Message</label><br>
+                <input class="input-text" type="text" name="message" id="msg" placeholder="Hi...." required><br>
+            </div>
+        </div>
+        
+        <button type="submit">Submit</button>
+    </form>
+    
+</body>
+</html>
