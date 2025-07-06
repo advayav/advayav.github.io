@@ -79,6 +79,15 @@ a{
     
 }
 
+.proj-title{
+    display: flex;
+    justify-content: space-between;
+}
+
+.proj-link{
+    padding-top: 15px;
+}
+
 a:visited{
     text-decoration: none;
     color: blue;
