@@ -1,14 +1,56 @@
+body{
+    margin: 0;
+    font-family: serif
+}
+
 .nav-bar{
     background-color: rgb(255, 230, 234);
     padding: 20px;
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
-    
+    padding-top: 40px;
+    padding-bottom: 40px;
+    position: sticky;
+}
+
+.home-button, .project-button, .contact-button{
+    margin-left: 30px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: large;
+    text-decoration: none;
+    color: black;
     
 }
 
+.home-button:visited, .project-button:visited, .contact-button:visited{
+    text-decoration: none;
+    color: black;
+}
+
+.title{
+    margin: 50px;
+    align-items: center;
+    text-align: center;
+}
+
 .intro-grid{
+    margin-top: 50px;
     display: grid;
+    grid-template-areas: "intro-photo intro-para";
+}
+
+.intro-para{
+    margin-left: 50px;
+    align-items: center;
+}
+
+.intro-photo{
+    align-items: center;
+    margin-left: 50px;
+    border: solid black 2px;
 }
